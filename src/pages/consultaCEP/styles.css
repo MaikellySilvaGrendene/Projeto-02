@@ -1,14 +1,104 @@
-form{
-   
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px ;
-    font-size: 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#CEP{
-    margin: 100px;;
+.ConsultaCep{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container-CEP{
+    padding: 1rem ;
+}
+
+h4{
+    font-size: 10pt !important;
+    margin-bottom: 1rem !important;
+    justify-content: center;
+    display: flex;
+}
+
+#InputConsultaCep{
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    width: 10rem;
+    height: 2.2rem;
+    font-size: 10pt;
+}
+
+#BTNbuscarCep {
+    padding: 0.4rem;
+    min-width: 20px;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#CEP {
+    border-top: 1px solid cornsilk;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    align-items: center;   
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 483px) {
     
+.ConsultaCep{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container-CEP{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+    height: 100vh;
+}
+
+h4{
+    margin-bottom: 1rem !important;
+    font-size: 22pt !important;;
+}
+
+#InputConsultaCep{
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    width: 20rem;
+    height: 3rem;
+    font-size: 12pt;
+}
+
+#BTNbuscarCep {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#CEP {
+    border-top: 1px solid cornsilk;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.conteudo-CEP{
+    margin-left: 1rem;
+}
 }

@@ -4,8 +4,8 @@ import "./styles.css";
 
 export const Layout = () => {
     return(
-        <>
-        <nav className="layout">
+        <header>
+                    <nav className="layout">
             <ul >
                 <li>
                     <Link to='/'>Home</Link>
@@ -19,6 +19,8 @@ export const Layout = () => {
             </ul>
         </nav> 
         <Outlet/>
-     </>
+    </header>
+
+     
     )
 };

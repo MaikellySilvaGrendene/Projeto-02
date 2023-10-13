@@ -1,27 +1,47 @@
-.layout ul {
-    list-style-type: none;
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0 ;
-    overflow: hidden;
+    padding: 0;
+}
+
+
+.layout ul {
     background-color: #344055;
-    display: flex;
+    list-style-type: none;
+    overflow: hidden;
     justify-content: center;
-    border-radius: 15px;
-    padding: 15px;
+
 }
 
 .layout li a {
-    float: left;
+    margin-top: 0.2rem;
     display: block;
     color: cornsilk;
     text-align: center;
-    padding: 10px 20px;
+    margin-bottom: 0.5rem;
     text-decoration: none;
-    font-size: 22px;
     border-radius: 10px;
 }
 
 .layout li a:hover {
     background-color:#2D3749;
+    border-radius: 0.5rem;
+    
 }
+
+
+@media screen and (min-width: 483px) {
+    .layout ul{
+        display: flex;
+        padding: 15px;
+    }
+
+    .layout li a{
+        float: left;
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+  
+}
+
 

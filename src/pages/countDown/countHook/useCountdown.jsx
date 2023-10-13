@@ -24,6 +24,9 @@ export function useCountdown (date) {
       const minuteNumber = Math.floor((interval % hour) / minute);
       const secondNumber = Math.floor((interval % minute) / second);
 
+      if (now > countDate) {
+        
+      }
       
 
       setDay(dayNumber);
@@ -32,10 +35,10 @@ export function useCountdown (date) {
       setSecond(secondNumber);
     };
 
-    // Iniciar o temporizador assim que o componente for montado
+
     const timer = setInterval(countdownSunDate, 1000);
 
-    // Limpar o temporizador quando o componente for desmontado
+
     return () => clearInterval(timer);
   }, [date]);
 
